@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "unplug",
+  "version": "${version}",
+  "name": "Unplug",
+  "description": "Type /unplug to hide Minecraft to the system tray and run it in a low-resource AFK mode.",
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.unplug.UnplugMod"]
+  },
+  "mixins": [
+    { "config": "unplug.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
